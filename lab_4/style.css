@@ -1,0 +1,94 @@
+h2,
+p {
+	margin: 0;
+	padding: 5px;
+	text-align: center;
+}
+
+.main {
+	width: 1422px;
+	margin: 0 auto;
+}
+
+.btn-create-container {
+	display: flex;
+	justify-content: center;
+}
+
+.edit-btns {
+	display: flex;
+}
+
+.btn-create,
+.btn-add,
+.close-form-btn,
+#btn-edit,
+#close-edit-form-btn {
+	width: 100px;
+	height: auto;
+	border-radius: 5px;
+	border: none;
+	background-color: rgb(18, 146, 129);
+	margin-top: 2px;
+	padding: 10px;
+}
+
+#btn-edit,
+#close-edit-form-btn {
+	margin-top: 2px;
+	width: 88.5px;
+	height: auto;
+	border-radius: 5px;
+	background-color: #129281;
+	padding: 10px;
+}
+
+.color-container {
+	margin: auto;
+	display: block;
+}
+
+.create-note,
+.edit-note {
+	display: flex;
+	flex-direction: column;
+}
+
+.create-note-container,
+.edit-note-container {
+	justify-content: center;
+	margin-top: 10px;
+}
+
+#create-note-container {
+	display: flex;
+}
+
+#edit-note-container {
+	display: none;
+}
+
+.btns-create-form {
+	margin: auto;
+	display: block;
+}
+
+.notes-list {
+	list-style: none;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-gap: 10px;
+	grid-auto-rows: minmax(120px, auto);
+	grid-auto-flow: dense;
+	padding: 0;
+}
+
+.notes-list li {
+	border: grey 1px solid;
+	border-radius: 10px;
+	min-width: 10px;
+}
+
+.notes-list li {
+	display: flex;
+}

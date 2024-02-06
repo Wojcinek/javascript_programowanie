@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="main">
+			<div id="create-note-container" class="create-note-container">
+				<form id="create-note" class="create-note">
+					<div class="title-container">
+						<input type="text" id="title" name="title" placeholder="Title" required />
+					</div>
+					<div class="content-container">
+						<input type="text" id="content" name="content" placeholder="Content" required />
+					</div>
+					<div class="color-container">
+						<input type="color" id="color" name="color" value="#129281" />
+					</div>
+					<div class="btns-create-form">
+						<div id="btn-add-note" class="btn-add-note">
+							<button id="btn-add" class="btn-add" type="submit">Add note</button>
+						</div>
+					</div>
+				</form>
+			</div>
+
+			<div id="edit-note-container" class="edit-note-container">
+				<form id="edit-note" class="edit-note">
+					<div class="title-container">
+						<input type="text" id="edit-title" />
+					</div>
+					<div class="content-container">
+						<input id="edit-content" />
+					</div>
+					<div class="edit-btns">
+						<div>
+							<button type="submit" id="btn-edit">Save</button>
+						</div>
+						<div class="btn-close-form-container">
+							<button id="close-edit-form-btn" class="close-edit-form-btn">Close</button>
+						</div>
+					</div>
+				</form>
+			</div>
+
+			<div class="notes-list-container">
+				<ul id="notes-list" class="notes-list"></ul>
+			</div>
+		</div>
+		<script src="main.js"></script>
+	</body>
+</html>
