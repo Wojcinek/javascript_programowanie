@@ -86,6 +86,7 @@ function animate() {
 		}
 	}
 	animationId = requestAnimationFrame(animate)
+	countFps()
 }
 
 function onClick(event) {
@@ -133,3 +134,13 @@ function onMouseMove(event) {
 
 startButton.addEventListener('click', startSimulation)
 resetButton.addEventListener('click', resetSimulation)
+
+function countFps() {
+	var now = performance.now()
+	while (times.length > 0 && times[0] <= now - 1000) {
+		times.shift()
+	}
+	times.push(now)
+	var fps = times.length
+	console.log(fps)
+}
