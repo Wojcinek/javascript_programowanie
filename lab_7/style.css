@@ -1,0 +1,42 @@
+#CityWeatherContainer {
+	display: flex;
+	margin-top: 1rem;
+	width: 100%;
+	flex-wrap: wrap;
+	font-family: 'Lucida Sans';
+}
+
+.city {
+	margin: 10px 10px;
+	margin-top: 1rem;
+	border: 1px solid #0b8199;
+	padding: 20px;
+	text-align: center;
+	width: 315px;
+	background-color: #d0e6f8;
+	border-radius: 5px;
+	box-shadow: 0 0 10px #0b8199;
+}
+
+#add {
+	max-width: 500px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 20px;
+	background-color: #d0e6f8;
+	border-radius: 10px;
+	box-shadow: 0 0 10px #0b8199;
+	margin-top: 1rem;
+	border: 1px solid #0b8199;
+	font-family: 'Lucida Sans';
+}
+
+button {
+	background-color: #8ba4b4;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	font-family: 'Lucida Sans';
+}
